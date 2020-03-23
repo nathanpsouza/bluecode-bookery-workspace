@@ -60,7 +60,7 @@ This will return a list with all books on api:
 
 ### Listing one book
 
-Do a GET request to `httpPUT://localhost:3000/books/<book_slug>` for example:
+Do a GET request to `http://localhost:3000/books/<book_slug>` for example:
 
     GET http://localhost:3000/books/et-quia-repellat-quo
 
@@ -157,7 +157,7 @@ This will return a list with all books on api:
 
 ### Listing one page
 
-Do a GET request to `http://localhost:3000/books/<book_slug>/pages/<page_numer>` for example:
+Do a GET request to `http://localhost:3000/books/<book_slug>/pages/<page_number>` for example:
 
     GET http://localhost:3000/books/et-quia-repellat-quo/pages/1
 
