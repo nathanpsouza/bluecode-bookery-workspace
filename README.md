@@ -1,5 +1,7 @@
 # BlueCode API Test
 
+This is the workspace to run bookery. For the actual project source code, visit: [https://github.com/nathanpsouza/bookery](https://github.com/nathanpsouza/bookery).
+
 ## Dependencies
 
 This projects uses [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/), so before run this code, you should have both of then installed on your computer.
