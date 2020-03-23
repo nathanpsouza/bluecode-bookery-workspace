@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-This projects uses (docker)[https://www.docker.com/] and (docker-compose)[https://docs.docker.com/compose/], so before run this code, you should have both of then installed on your computer.
+This projects uses [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/), so before run this code, you should have both of then installed on your computer.
 
 ## How to run this project
 
@@ -14,11 +14,15 @@ When the above command is completed, you can setup database with:
 
     $ docker-compose run api bash -c 'bundle exec rails db:create db:migrate db:seed'
 
-To start server:
+### Run server
 
     $ docker-compose up api
 
 After this, the endpoints will be accessible through `http://localhost:3000`.
+
+### Run Rspec Tests
+
+    $ docker-compose run api bash -c 'bundle exec rspec spec'
 
 ## Headers to use
 
