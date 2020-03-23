@@ -198,6 +198,8 @@ Do a post request to `http://localhost:3000/books/<book_slug>/pages` with json i
       }
     }
 
+You must use markdown on `content` attribute.
+
 the result will be:
 
     {
@@ -214,7 +216,9 @@ Do a PUT request to `http://localhost:3000/books/<book_slug>/pages/<page_number>
 
     PUT http://localhost:3000/books/test-book/pages/1
 
-the request body should have the following format:
+You must use markdown on `content` attribute.
+
+The request body should have the following format:
 
     {
       "page": {
