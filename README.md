@@ -6,23 +6,25 @@ This projects uses [docker](https://www.docker.com/) and [docker-compose](https:
 
 ## How to run this project
 
-After clone this repository, go to `bluecode-bookery-workspace` and get the actual project code:
+To download this project, just run:
 
-    $ cd bluecode-bookery-workspace && git clone git@github.com:nathanpsouza/bookery.git
+    git clone git@github.com:nathanpsouza/bluecode-bookery-workspace.git &&\
+    cd bluecode-bookery-workspace &&\
+    git clone git@github.com:nathanpsouza/bookery.git
 
 When the above command is completed, you can setup database with:
 
-    $ docker-compose run api bash -c 'bundle exec rails db:create db:migrate db:seed'
+    docker-compose run api bash -c 'bundle exec rails db:create db:migrate db:seed'
 
 ### Run server
 
-    $ docker-compose up api
+    docker-compose up api
 
 After this, the endpoints will be accessible through `http://localhost:3000`.
 
 ### Run Rspec Tests
 
-    $ docker-compose run api bash -c 'bundle exec rspec spec'
+    docker-compose run api bash -c 'bundle exec rspec spec'
 
 ## Headers to use
 
