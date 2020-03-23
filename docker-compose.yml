@@ -1,0 +1,27 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:9.6-alpine
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    env_file:
+      - 'env'
+
+  api:
+    build: ./bookery
+    command: /bin/bash -c "bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+        - ./bookery:/app
+    ports:
+        - "3000:3000"
+    env_file:
+        - 'env'
+    depends_on:
+        - postgres
+    tty: true
+    stdin_open: true
+
+volumes:
+  postgres:

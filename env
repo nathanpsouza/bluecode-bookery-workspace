@@ -1,0 +1,4 @@
+# POSTGRES
+DB_SERVER=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=password
